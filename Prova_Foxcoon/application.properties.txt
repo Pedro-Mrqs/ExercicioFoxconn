@@ -1,0 +1,16 @@
+spring.application.name=aluno-api
+
+# Configurações do H2 
+spring.datasource.url=jdbc:h2:mem:alunodb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Console do H2 ativo em http://localhost:8080/h2-console
+spring.h2.console.enabled=true
+spring.h2.console.settings.web-allow-others=true
+
+# Exibir as queries SQL no console (bom para auditoria no teste)
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
